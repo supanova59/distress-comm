@@ -1,0 +1,5 @@
+{
+  "name": "NexusResponse Admin",
+  "description": "Offline-first disaster communication admin dashboard",
+  "requestFramePermissions": []
+}
