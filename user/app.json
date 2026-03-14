@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Distress Comm",
+    "slug": "distress-comm-user",
+    "version": "1.0.0",
+    "scheme": "distress-comm",
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      "@config-plugins/react-native-ble-plx"
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to attach it to distress calls.",
+        "NSBluetoothAlwaysUsageDescription": "We use Bluetooth to send distress calls to nearby rescue devices when offline."
+      }
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_CONNECT"
+      ]
+    }
+  }
+}
